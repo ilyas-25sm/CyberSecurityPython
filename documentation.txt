@@ -1,0 +1,168 @@
+17.09.2024
+- downloaded examples of GUI from open sources
+- wrote a raw version of GUI code for Mirza
+- downloaded and installed git
+- downloaded and installed python3.12
+- downloaded and installed pycharm
+- compiled and debugged code for GUI in pycharm
+- ran the Mirza_GUI.py
+
+24.09.2024
+- downloaded and installed Docker for Desktop
+- created and ran first container (hello, Docker!)
+
+01.10.2024
+- compiled and debugged code for Engine in pycharm
+- downloaded and installed PostGreSQL17
+
+18.10.2024
+- debugged and optimised code for Engine in pycharm
+- debugged and optimised code for Language in pycharm
+- debugged and optimised code for GUI in pycharm
+- added progress bar, HashDB (open source) comparing function and other functions for the MirzaAntivirus
+- debugged and optimised code for MirzaAntivirus in pycharm
+- ran MirzaAntivirus and got positive scanning results
+
+22.10.2024
+- add malware signature scan (future feature)
+- add network attack (future feature)
+
+04.11.2024
+- added the malware signature scanner (YaraScanner), with .yar signature DB (open source)
+
+05.11.2024
+- added the firewall feature [needs more work]
+
+12.11.2024
+- added the polymorphic scan option (With machine learning algorithm), [needs more work]
+
+19.11.2024
+- added the antivirus system feature based on RabbitMQ [needs more work]
+- need to install erlang and RabbitMQ server to work
+
+26.11.2024
+- successfuly installed Erlang and RabbitMQ on the PC, successfuly started the rabbitmq-service
+- need to revision the antivirus code to finish development on the RabbitMQ Monitoring function
+
+03.12.2024
+- successfuly added the RabbitMQ Monitoring fucntion
+- added quality of life changes (better translations, visualisation)
+
+D:\RabbitMQ Server\rabbitmq_server-4.0.4\sbin>rabbitmq-service.bat startrabbitmq-service.bat status
+
+*********************
+Service control usage
+*********************
+
+rabbitmq-service help    - Display this help
+rabbitmq-service install - Install the RabbitMQ service
+rabbitmq-service remove  - Remove the RabbitMQ service
+
+The following actions can also be accomplished by using
+Windows Services Management Console (services.msc):
+
+rabbitmq-service start   - Start the RabbitMQ service
+rabbitmq-service stop    - Stop the RabbitMQ service
+rabbitmq-service disable - Disable the RabbitMQ service
+rabbitmq-service enable  - Enable the RabbitMQ service
+
+
+D:\RabbitMQ Server\rabbitmq_server-4.0.4\sbin>rabbitmqctl status
+Status of node rabbit@DESKTOP-PP35C5H ...
+[]
+Runtime
+
+OS PID: 10592
+OS: Windows
+Uptime (seconds): 268
+Is under maintenance?: false
+RabbitMQ version: 4.0.4
+RabbitMQ release series support status: see https://www.rabbitmq.com/release-information
+Node name: rabbit@DESKTOP-PP35C5H
+Erlang configuration: Erlang/OTP 27 [erts-15.1.2] [source] [64-bit] [smp:16:16] [ds:16:16:10] [async-threads:1] [jit:ns]
+Crypto library: OpenSSL 3.1.0 14 Mar 2023
+Erlang processes: 350 used, 1048576 limit
+Scheduler run queue: 1
+Cluster heartbeat timeout (net_ticktime): 60
+
+Plugins
+
+Enabled plugin file: c:/Users/qws12/AppData/Roaming/RabbitMQ/enabled_plugins
+Enabled plugins:
+
+
+Data directory
+
+Node data directory: c:/Users/qws12/AppData/Roaming/RabbitMQ/db/rabbit@DESKTOP-PP35C5H-mnesia
+Raft data directory: c:/Users/qws12/AppData/Roaming/RabbitMQ/db/rabbit@DESKTOP-PP35C5H-mnesia/quorum/rabbit@DESKTOP-PP35C5H
+
+Config files
+
+ * c:/Users/qws12/AppData/Roaming/RabbitMQ/advanced.config
+
+Log file(s)
+
+ * <stdout>
+ * c:/Users/qws12/AppData/Roaming/RabbitMQ/log/rabbit@DESKTOP-PP35C5H.log
+
+Alarms
+
+(none)
+
+Tags
+
+(none)
+
+Memory
+
+Total memory used: 0.089 gb
+Calculation strategy: rss
+Memory high watermark setting: 0.6 of available memory, computed to: 7.657 gb
+
+other_proc: 0.0262 gb (29.45 %)
+other_system: 0.0229 gb (25.72 %)
+code: 0.0191 gb (21.42 %)
+allocated_unused: 0.0161 gb (18.06 %)
+metrics: 0.002 gb (2.22 %)
+atom: 0.001 gb (1.08 %)
+other_ets: 0.0008 gb (0.86 %)
+binary: 0.0005 gb (0.52 %)
+msg_index: 0.0004 gb (0.4 %)
+metadata_store: 0.0001 gb (0.09 %)
+mnesia: 0.0001 gb (0.08 %)
+plugins: 0.0 gb (0.03 %)
+quorum_ets: 0.0 gb (0.03 %)
+queue_procs: 0.0 gb (0.01 %)
+metadata_store_ets: 0.0 gb (0.01 %)
+quorum_queue_procs: 0.0 gb (0.0 %)
+quorum_queue_dlx_procs: 0.0 gb (0.0 %)
+stream_queue_procs: 0.0 gb (0.0 %)
+stream_queue_replica_reader_procs: 0.0 gb (0.0 %)
+connection_readers: 0.0 gb (0.0 %)
+connection_writers: 0.0 gb (0.0 %)
+connection_channels: 0.0 gb (0.0 %)
+connection_other: 0.0 gb (0.0 %)
+stream_queue_coordinator_procs: 0.0 gb (0.0 %)
+mgmt_db: 0.0 gb (0.0 %)
+reserved_unallocated: 0.0 gb (0.0 %)
+
+File Descriptors
+
+Total: 0, limit: 65439
+
+Free Disk Space
+
+Low free disk space watermark: 0.05 gb
+Free disk space: 28.0679 gb
+
+Totals
+
+Connection count: 0
+Queue count: 1
+Virtual host count: 1
+
+Listeners
+
+Interface: [::], port: 25672, protocol: clustering, purpose: inter-node and CLI tool communication
+Interface: [::], port: 5672, protocol: amqp, purpose: AMQP 0-9-1 and AMQP 1.0
+Interface: 0.0.0.0, port: 5672, protocol: amqp, purpose: AMQP 0-9-1 and AMQP 1.0

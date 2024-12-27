@@ -1,0 +1,4 @@
+CREATE TABLE malware_hashes (
+    hash TEXT PRIMARY KEY,
+    name TEXT
+);

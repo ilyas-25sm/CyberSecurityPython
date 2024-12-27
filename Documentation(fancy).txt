@@ -1,0 +1,60 @@
+Documentation: Mirza Antivirus Development Progress
+
+17.09.2024
+- Downloaded examples of GUI from open sources and explored various design inspirations.
+- Wrote the initial raw version of the GUI code for Mirza Antivirus using PyQt5.
+- Installed essential development tools:
+1) Git for version control.
+2) Python 3.12 as the primary programming language.
+3) PyCharm as the main Integrated Development Environment (IDE).
+- Successfully compiled and debugged the GUI code in PyCharm.
+- Ran Mirza_GUI.py, marking the first tangible interface for the antivirus.
+
+24.09.2024
+- Installed Docker for Desktop to experiment with containerization for future scalability.
+- Created and successfully ran the first container (Hello, Docker!) to validate the setup.
+
+01.10.2024
+- Compiled and debugged the Engine code in PyCharm to establish the core scanning functionality.
+- Installed PostgreSQL 17 for database integration to store and manage malware signatures and logs.
+
+18.10.2024
+- Debugged and optimized the Engine, Language, and GUI modules in PyCharm.
+- Enhanced the MirzaAntivirus program by:
+- Adding a progress bar for better user experience during scans.
+- Implementing a HashDB comparison function to scan files against an open-source malware hash database.
+- Integrating various essential features for robust antivirus performance.
+- Ran MirzaAntivirus and achieved positive results during test scans, validating initial functionality.
+
+22.10.2024
+- Brainstormed and documented future features for Mirza Antivirus:
+1) Malware signature scanning to detect known threats.
+2) Network attack detection for identifying suspicious network activity.
+
+04.11.2024
+- Added the malware signature scanner using YaraScanner with an open-source .yar signature database.
+- Integrated signature-based scanning for detecting threats, marking a significant leap in antivirus capabilities.
+
+05.11.2024
+- Implemented the firewall feature to enhance network security and provide options like full isolation and selective protection.
+- Logged tasks for further optimization and bug fixing in the firewall module.
+
+12.11.2024
+- Introduced a polymorphic scan feature leveraging a machine learning algorithm to detect advanced malware threats.
+- Initial implementation completed; further refinement needed to improve detection accuracy and performance.
+
+19.11.2024
+- Developed the RabbitMQ-based antivirus system feature for asynchronous task handling.
+- Documented the need to install Erlang and the RabbitMQ server for enabling the monitoring functionality.
+
+26.11.2024
+- Successfully installed Erlang and the RabbitMQ server on the development machine.
+- Started the RabbitMQ service and verified its functionality.
+- Initiated revisions in the antivirus codebase to finalize the RabbitMQ Monitoring feature.
+
+03.12.2024
+- Completed the integration of the RabbitMQ Monitoring function, enabling asynchronous monitoring of processes.
+- Enhanced user experience with quality of life improvements, including:
+- Better translations for multilingual support.
+- Visual indicators for RabbitMQ and firewall statuses for greater clarity.
+- Conducted extensive testing, ensuring stability and readiness for further features and releases.

@@ -1,0 +1,9 @@
+PyQt5
+yara-python
+numpy
+pefile
+onnxruntime
+pillow
+scikit-learn
+pika
+pyinstaller-versionfile
